@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def main():
     print('poetry run brain_games')
     print('Welcome to the Brain games!')

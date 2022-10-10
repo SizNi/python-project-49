@@ -9,6 +9,8 @@ brain-even: # start brain-even
 
 brain-calc: # start brain-calc
 	poetry run brain-calc
+brain-gcd: # start brain-calc
+	poetry run brain-gcd
 
 build: # сборка программы, запускать после внесения изменений и перед запуском самой программы
 	poetry build

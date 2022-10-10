@@ -12,3 +12,6 @@ publish: # непонятно что это (посмотреть)
 
 package-install: # установка пакета *.whl (тоже надо запускать после build)
 	python3 -m pip install --user dist/*.whl
+
+lint: # запуск flake8 на проект brain_games
+	poetry run flake8 brain_games

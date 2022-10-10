@@ -7,6 +7,9 @@ brain-games: # start brain-games
 brain-even: # start brain-even
 	poetry run brain-even
 
+brain-calc: # start brain-calc
+	poetry run brain-calc
+
 build: # сборка программы, запускать после внесения изменений и перед запуском самой программы
 	poetry build
 

@@ -9,8 +9,12 @@ brain-even: # start brain-even
 
 brain-calc: # start brain-calc
 	poetry run brain-calc
+
 brain-gcd: # start brain-calc
 	poetry run brain-gcd
+
+brain-progression: # start brain-progression
+	poetry run brain-progression
 
 build: # сборка программы, запускать после внесения изменений и перед запуском самой программы
 	poetry build
@@ -23,3 +27,6 @@ package-install: # установка пакета *.whl (тоже надо за
 
 lint: # запуск flake8 на проект brain_games
 	poetry run flake8 brain_games
+
+reinstall:  # переустановка пакета
+	pip install --user --force-reinstall dist/*.whl

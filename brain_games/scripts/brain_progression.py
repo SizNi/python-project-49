@@ -13,7 +13,7 @@ def brain_progression():
         progress = create_progression()
         know_number = random.randint(0, len(progress) - 1)
         saved_know_number = progress[know_number]  # запомнили верный ответ
-        progress[know_number] = '...'
+        progress[know_number] = '..'
         progress_to_show = (' '.join(map(str, progress)))
         print(f'Question: {progress_to_show}')
         print('Your answer: ', end = '')

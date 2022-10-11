@@ -11,15 +11,16 @@ def brain_prime():
     while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         prime, num = is_prime()
         print(f'Question: {num}')
+        print('Your answer: ', end = '')
         answer = input()
         answer = str(answer.lower())
         # цикл сравнения ответа игрока с правильным ответом
         if (answer == 'yes' and prime) or (answer == 'no' and not prime):
             i += 1
-            print(f'Correct, {new_name}!')
+            print('Correct!')
             result = True
         else:
-            print(f"Wrong answer, {new_name}\nLets try again")
+            print(f"'{answer}' is wrong answer, {new_name}\nLet's try again")
             result = False
     if result:
         print(f'Congratulations, {new_name}!')

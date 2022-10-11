@@ -12,14 +12,17 @@ def brain_calc():
     print("What is the result of the expression?")
     while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         result_random = random_count()
-        print('Your answer: ', end = '')
+        print('Your answer: ', end='')
         answer = input()
         if answer == str(result_random):
             i += 1
-            print(f'Correct!')
+            print('Correct!')
             result = True
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result_random}'.")
+            print(
+                f"'{answer}' is wrong answer ;(."
+                f"Correct answer was '{result_random}'."
+            )
             print(f"Let's try again, {new_name}!")
             result = False
     if result:
@@ -28,12 +31,12 @@ def brain_calc():
 
 
 def random_count():
-    ops = {'+': operator.add, 
+    ops = {'+': operator.add,
            '-': operator.sub,
            '*': operator.mul}
     num1 = random.randint(0, 12)
     num2 = random.randint(1, 10)
     op = random.choice(list(ops.keys()))
-    result_random = ops.get(op)(num1,num2)
+    result_random = ops.get(op)(num1, num2)
     print(f'Question: {num1} {op} {num2}')
     return int(result_random)

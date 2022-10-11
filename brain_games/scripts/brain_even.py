@@ -17,7 +17,7 @@ def brain_even():
         else:
             even = False
         print(f'Question: {number}')
-        print('Your answer: ', end = '')  # ввод ответа
+        print('Your answer: ', end='')  # ввод ответа
         txt = input().lower()
         # цикл сравнения ответа игрока с правильным ответом
         if (even and txt == 'yes') or (not even and txt == 'no'):
@@ -25,10 +25,16 @@ def brain_even():
             print('Correct!')
             result = True
         elif not even and txt == 'yes':  # ниже неверные ответы
-            print(f"'{txt}' is wrong answer ;(. Correct answer was 'no'\nLet's try again, {new_name}!")
+            print(
+                f"'{txt}' is wrong answer ;(."
+                f"Correct answer was 'no'\nLet's try again, {new_name}!"
+            )
             result = False
         else:
-            print(f"'{txt}' is wrong answer ;(. Correct answer was 'yes'\nLet's try again, {new_name}!")
+            print(
+                f"'{txt}' is wrong answer ;(."
+                f"Correct answer was 'yes'\nLet's try again, {new_name}!"
+            )
             result = False
     if result:
         print(f'Congratulations, {new_name}!')

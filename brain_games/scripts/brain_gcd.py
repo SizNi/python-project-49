@@ -11,11 +11,11 @@ def brain_gcd():
     print("Find the greatest common divisor of given numbers.")
     while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         gcd = gcd_enter()
-        print('Your answer: ', end = '')
+        print('Your answer: ', end='')
         answer = input()
         if answer == str(gcd):
             i += 1
-            print(f'Correct!')
+            print('Correct!')
             result = True
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd}'.")

@@ -11,7 +11,7 @@ def brain_prime():
     while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         prime, num = is_prime()
         print(f'Question: {num}')
-        print('Your answer: ', end = '')
+        print('Your answer: ', end='')
         answer = input()
         answer = str(answer.lower())
         # цикл сравнения ответа игрока с правильным ответом

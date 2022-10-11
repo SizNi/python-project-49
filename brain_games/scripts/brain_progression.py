@@ -16,7 +16,7 @@ def brain_progression():
         progress[know_number] = '..'
         progress_to_show = (' '.join(map(str, progress)))
         print(f'Question: {progress_to_show}')
-        print('Your answer: ', end = '')
+        print('Your answer: ', end='')
         answer = input()
         # цикл сравнения ответа игрока с правильным ответом
         if answer == str(saved_know_number):
@@ -24,7 +24,10 @@ def brain_progression():
             print('Correct!')
             result = True
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{saved_know_number}'.")
+            print(
+                f"'{answer}' is wrong answer ;(."
+                f"Correct answer was '{saved_know_number}'."
+            )
             print(f"Let's try again, {new_name}!")
             result = False
     if result:

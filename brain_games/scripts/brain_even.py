@@ -25,10 +25,10 @@ def brain_even():
             print('Correct!')
             result = True
         elif not even and txt == 'yes':  # ниже неверные ответы
-            print(f"'{txt}' is wrong answer ;(. Correct answer was 'no'\nLets try again, {new_name}!")
+            print(f"'{txt}' is wrong answer ;(. Correct answer was 'no'\nLet's try again, {new_name}!")
             result = False
         else:
-            print(f"'{txt}' is wrong answer ;(. Correct answer was 'yes'\nLets try again, {new_name}!")
+            print(f"'{txt}' is wrong answer ;(. Correct answer was 'yes'\nLet's try again, {new_name}!")
             result = False
     if result:
         print(f'Congratulations, {new_name}!')

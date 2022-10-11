@@ -18,7 +18,7 @@ def brain_prime():
             print(f'Correct, {new_name}!')
             result = True
         else:
-            print(f"А вот нетушки, совсем неверно, надо переделать, товарищ {new_name}")
+            print(f"Wrong answer, {new_name}\nLets try again")
             result = False
     if result == True:
         print(f'Congratulations, {new_name}')

@@ -1,9 +1,7 @@
 def welcome_user():  # приветствие и ввод имени
     name = ''
     while name == '':
-        print('whats your name, bro? ', end='')
+        print('May i have your name?', end = ' ')
         name = input()
-
-    if __name__ == '__main__':
-        print(f'Yo, {name.title()}!')
+        print(f'Hello, {name.title()}!')
     return name

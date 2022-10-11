@@ -14,11 +14,11 @@ def brain_gcd():
         answer = input()
         if answer == str(gcd):
             i += 1
-            print(f'Correct, {new_name}!')
+            print(f'Correct!')
             result = True
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was {gcd}")
-            print(f'Lets try again, {new_name}!')
+            print(f"Let's try again, {new_name}!")
             result = False
     if result:
         print(f'Congratulations, {new_name}!')

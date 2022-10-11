@@ -16,15 +16,16 @@ def brain_progression():
         progress[know_number] = '...'
         progress_to_show = (' '.join(map(str, progress)))
         print(f'Question: {progress_to_show}')
+        print('Your answer: ', end = '')
         answer = input()
         # цикл сравнения ответа игрока с правильным ответом
         if answer == str(saved_know_number):
             i += 1
-            print(f'Correct, {new_name}!')
+            print('Correct!')
             result = True
         else:
-            print(f"'{answer}' is wrong. Correct answer {saved_know_number}")
-            print(f"Lets try again, {new_name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{saved_know_number}'.")
+            print(f"Let's try again, {new_name}!")
             result = False
     if result:
         print(f'Congratulations, {new_name}!')

@@ -31,5 +31,5 @@ def brain_even():
             print(f"'{txt}' wrong. Correct answer 'yes'\nTry again, {new_name}")
             result = False
     if result:
-        print(f'Congratulations, {new_name}')
+        print(f'Congratulations, {new_name}!')
         return

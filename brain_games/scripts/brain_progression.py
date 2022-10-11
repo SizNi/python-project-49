@@ -27,7 +27,7 @@ def brain_progression():
             print(f"Lets try again, {new_name}!")
             result = False
     if result:
-        print(f'Congratulations, {new_name}')
+        print(f'Congratulations, {new_name}!')
         return
 
 

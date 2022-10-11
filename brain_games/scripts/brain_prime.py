@@ -22,7 +22,7 @@ def brain_prime():
             print(f"Wrong answer, {new_name}\nLets try again")
             result = False
     if result:
-        print(f'Congratulations, {new_name}')
+        print(f'Congratulations, {new_name}!')
         return
 
 

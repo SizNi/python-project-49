@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
+from brain_games.scripts.cli import get_user_name
 import random
 import operator
 
 
 def brain_calc():
-    new_name = main().title()
+    new_name = get_user_name()
     i = 0  # счетчик верных ответов
     result = True
     result_random = 0
@@ -13,7 +13,7 @@ def brain_calc():
     while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         result_random = random_count()
         answer = input()
-        if int(answer) == result_random:
+        if answer == str(result_random):
             i += 1
             print(f'Correct, {new_name}!')
             result = True

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
+from brain_games.scripts.cli import get_user_name
 import random
 
 
 def brain_progression():
-    new_name = main().title()
+    new_name = get_user_name()
     i = 0  # счетчик верных ответов
     result = True
     progress = []

@@ -22,7 +22,7 @@ brain-prime: # start brain-prime
 build: # сборка программы, запускать после внесения изменений и перед запуском самой программы
 	poetry build
 
-publish: # непонятно что это (посмотреть)
+publish: # проверка на ошибки
 	poetry publish --dry-run
 
 package-install: # установка пакета *.whl (тоже надо запускать после build)

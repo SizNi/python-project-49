@@ -1,7 +1,13 @@
 def welcome_user():  # приветствие и ввод имени
     name = ''
     while name == '':
-        print('May i have your name?', end = ' ')
         name = input()
-        print(f'Hello, {name.title()}!')
+        return name
+
+
+def get_user_name():
+    print('Welcome to the Brain games!')
+    print('May i have your name?', end = ' ')
+    name = welcome_user().title()
+    print(f'Hello, {name}!')
     return name

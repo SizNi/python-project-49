@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.brain_games import main
+from brain_games.scripts.cli import get_user_name
 
 
 def brain_even():
-    new_name = main().title()  # получение имени из cli.py
+    new_name = get_user_name()  # получение имени из cli.py
     i = 0  # счетчик верных ответов
     # условие выхода из цикла если сменится на False в случае ошибки:
     result = True

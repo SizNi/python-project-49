@@ -5,7 +5,7 @@ import random
 
 def brain_progression():
     new_name = get_user_name()
-    i = 0  # счетчик верных ответов
+    i = 0  # счетчик верных
     result = True
     progress = []
     print("What number is missing in the progression?")

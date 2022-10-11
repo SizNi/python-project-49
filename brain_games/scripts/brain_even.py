@@ -8,7 +8,7 @@ def brain_even():
     i = 0  # счетчик верных ответов
     # условие выхода из цикла если сменится на False в случае ошибки:
     result = True
-    print("Answer 'yes' if the number is even, otherwise answer 'no'")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         number = randint(0, 1000)
         # проверка сгенерированного числа четность:

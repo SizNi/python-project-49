@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.scripts.brain_games import main
 import random
-import operator
+
 
 def brain_progression():
     new_name = main().title()
@@ -9,9 +9,9 @@ def brain_progression():
     result = True
     progress = []
     print("What number is missing in the progression?")
-    while i <= 2 and result == True:  # цикл до 3 верных попыток или 1 ошибки
+    while i <= 2 and result:  # цикл до 3 верных попыток или 1 ошибки
         progress = create_progression()
-        know_number = random.randint(0,len(progress)-1)  # выбор убранного знака
+        know_number = random.randint(0, len(progress) - 1)
         saved_know_number = progress[know_number]  # запомнили верный ответ
         progress[know_number] = '...'
         progress_to_show = (' '.join(map(str, progress)))
@@ -23,20 +23,22 @@ def brain_progression():
             print(f'Correct, {new_name}!')
             result = True
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was {saved_know_number}\nLets try again, {new_name}!")
+            print(f"'{answer}' is wrong. Correct answer {saved_know_number}")
+            print(f"Lets try again, {new_name}!")
             result = False
-    if result == True:
+    if result:
         print(f'Congratulations, {new_name}')
         return
 
+
 def create_progression():
-    coef_progr = random.randint(1,7)  # коэффициент увеличения прогресси
-    coef_len = random.randint(5,20)  # случайно определяется длина прогрессии
-    progression = [random.randint(0,5)] # определение стартового значения прогрессии
+    coef_progr = random.randint(1, 7)  # коэффициент увеличения прогресси
+    coef_len = random.randint(5, 20)  # случайно определяется длина прогрессии
+    progression = [random.randint(0, 5)]  # определение старт.знач.пр.
     i = 1
     a = 0
     while i <= coef_len:
-        a = progression[i-1] + coef_progr
+        a = progression[i - 1] + coef_progr
         progression.append(a)
         i += 1
     return progression

@@ -9,4 +9,5 @@
 ### brain-calc work video: https://asciinema.org/a/527156
 ### brain-gcd work video: https://asciinema.org/a/527197
 ### brain-progression work video: https://asciinema.org/a/527217
-### brain-prime work video: <script id="asciicast-527231" src="https://asciinema.org/a/527231.js" async></script>
+### brain-prime work video: 
+[![asciicast](https://asciinema.org/a/527231.svg)](https://asciinema.org/a/527231)

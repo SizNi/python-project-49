@@ -11,7 +11,7 @@ def brain_gcd():
     while i <= 2 and result == True:  # цикл до 3 верных попыток или 1 ошибки
         gcd = gcd_enter()
         answer = input()
-        if int(answer) == gcd:
+        if answer == str(gcd):
             i += 1
             print(f'Correct, {new_name}!')
             result = True

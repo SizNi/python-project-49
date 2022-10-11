@@ -16,6 +16,9 @@ brain-gcd: # start brain-calc
 brain-progression: # start brain-progression
 	poetry run brain-progression
 
+brain-prime: # start brain-prime
+	poetry run brain-prime
+
 build: # сборка программы, запускать после внесения изменений и перед запуском самой программы
 	poetry build
 
